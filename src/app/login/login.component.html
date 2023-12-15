@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="card">
+        <h1>Login Form</h1>
+        <form #myLogin="ngForm" (ngsubmit)="doLogin(myLogin.value)">
+            
+              <p>
+                <mat-form-field appearance="outline" class="field">
+                  <mat-label>Email</mat-label>]
+                  <input type="email" name="email" [(ngModel)]="data.email" matInput placeholder="Enter Email">
+                </mat-form-field> 
+                
+              <div class="send">
+                <button type="submit" mat-raised-button color="primary">Login</button>
+                <button type="reset" mat-raised-button color="accent">Reset</button>
+              </div>
+        </form>
+    </div>
+</div>
